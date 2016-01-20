@@ -1,0 +1,29 @@
+var objectTemplate = function(name,color,temp) {
+this.name = name;
+this.color = color;
+this.temp = 100;
+}
+var bottle = new objectTemplate(‘bottle’,’purple’,100);
+
+bottle
+
+
+var chapstick = function () {
+  this.color = "Yellow";
+  this.volume = 100;
+  this.capped = true; 
+}
+
+var myChapstick = new chapstick();
+
+myChapstick.uncap = function () {
+  this.capped = false;
+}
+
+myChapstick.cap = function () {
+  this.capped = true;
+}
+
+myChapstick.uncap()
+
+myChapstick.cap();
